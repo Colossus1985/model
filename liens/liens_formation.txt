@@ -1,20 +1,20 @@
 Tutorial sur le bash :
-https://linuxjourney.com/lesson/print-working-directory-pwd-command?fbclid=IwAR0L17y37uoughJbRmOivjxto7ksBOex5YgY36qcdHeeC0XQDP15EOkhE1w
+[https://linuxjourney.com/lesson/print-working-directory-pwd-command?fbclid=IwAR0L17y37uoughJbRmOivjxto7ksBOex5YgY36qcdHeeC0XQDP15EOkhE1w]
 
 Explication css - grid :
-https://css-tricks.com/snippets/css/complete-guide-grid/
+[https://css-tricks.com/snippets/css/complete-guide-grid/]
 
 Explication css - flexbox :
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+[https://css-tricks.com/snippets/css/a-guide-to-flexbox/]
 
 Site de programmation par bloc pour appréhender l'algorithmie :
-https://code.org/minecraft
+[https://code.org/minecraft]
 
 Vitrine des designers web :
-https://dribbble.com/
+[https://dribbble.com/]
 
 Condingame :
-https://www.codingame.com/training/easy/onboarding
+[https://www.codingame.com/training/easy/onboarding]
 
 Markdown Cheatsheet :
-https://fr.wikipedia.org/wiki/Markdown
+[https://fr.wikipedia.org/wiki/Markdown]
