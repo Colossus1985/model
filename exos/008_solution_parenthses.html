@@ -37,27 +37,35 @@
       inputExpression_up.addEventListener("keyup", (event) => {
         valeur_input = document.getElementById("expression").value;
         var valeur_input_list = [];
-        var list_ouvrantes = ["("];
-        var list_fermantes = [")"];
+        var list_ouvrantes = [];
+        var list_fermantes = [];
         var regex_O = /[(]/g;
         var regex_F = /[)]/g;
 
         valeur_input_list.push(valeur_input);
         valeur_list_str = valeur_input_list.toString();
 
-        list_ouvrantes = list_ouvrantes + valeur_list_str.match(regex_O);
-        list_fermantes = list_fermantes + valeur_list_str.match(regex_F);
+        if (valeur_list_str != null) {
+          list_ouvrantes = valeur_list_str.match(regex_O);
+          if (list_ouvrantes == null) {
+            list_ouvrantes = "";
+          }
+          list_fermantes = valeur_list_str.match(regex_F);
+          if (list_fermantes == null) {
+            list_fermantes = "";
+          }
+        }
 
-        if (list_ouvrantes.length > 1 && list_fermantes.length > 1) {
+        if (list_ouvrantes.length >= 0 && list_fermantes.length >= 0) {
           if (list_ouvrantes.length > list_fermantes.length) {
-            console.log("plus de pare ouvrantes");
-            document.getElementById("result").innerHTML =
-              "Il faut une ou des parenthèses ouvrante(s)";
-            document.getElementById("result").style.color = "red";
-          } else if (list_ouvrantes.length < list_fermantes.length) {
             console.log("plus de pare fermantes");
             document.getElementById("result").innerHTML =
-              "Il faut une ou des parenthèses fermante(s)";
+              "Il faut une ou des parenthèses FERMANTE(S)";
+            document.getElementById("result").style.color = "red";
+          } else if (list_ouvrantes.length < list_fermantes.length) {
+            console.log("plus de pare ouvrantes");
+            document.getElementById("result").innerHTML =
+              "Il faut une ou des parenthèses OUVRANTE(S)";
             document.getElementById("result").style.color = "red";
           } else if (list_ouvrantes.length == list_fermantes.length) {
             console.log("égalité");
