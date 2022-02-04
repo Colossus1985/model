@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Mono", monospace;
+  border: 0.2rem dashed black;
+  border-top: none;
+  margin: auto;
+  width: 95%;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+header {
+  margin-top: 4rem;
+  width: 70%;
+  margin: auto;
+}
+#header_container {
+  display: flex;
+  background-color: rgba(255, 183, 3, 1);
+  width: 90%;
+  height: 5rem;
+  margin: auto;
+  justify-content: center;
+}
+
+#icon_header {
+  margin-top: 2.1rem;
+  margin-left: 2rem;
+}
+
+#sec_title {
+  font-size: 15px;
+  background-color: rgba(142, 202, 230, 1);
+  width: 90%;
+  height: 4rem;
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#alien {
+  display: inline-flex;
+}
+#sec_title_part1 {
+  display: inline-flex;
+}
+#poisson {
+  display: inline-flex;
+}
+#sec_title_part2 {
+  display: inline-flex;
+}
+
+#div_ajout {
+  margin: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#input_name {
+  width: 15rem;
+  height: 1.2rem;
+  margin-left: 2rem;
+}
+
+#btn_submit {
+  margin-top: -0.2rem;
+  height: 1rem;
+  margin-left: 2rem;
+  background-color: rgba(2, 48, 71, 1);
+  color: #fff;
+  font-weight: bold;
+  border: 0.5rem solid rgba(2, 48, 71, 1);
+  border-radius: 0.2rem;
+}
+
+#help {
+  text-align: center;
+  margin-top: -0.5rem;
+}
+#div_list {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#div_apprennant_title {
+  background-color: rgba(142, 202, 230, 1);
+  height: 3rem;
+  margin: auto;
+  display: flex;
+  width: 90%;
+  justify-content: center;
+}
+
+#btn_modif_list {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#btn_suivant {
+  margin-left: 1rem;
+  background-color: rgba(2, 48, 71, 1);
+  color: #fff;
+  font-weight: bold;
+  border: 0.5rem solid rgba(2, 48, 71, 1);
+  border-radius: 0.2rem;
+}
+#btn_refraiche_list {
+  margin-left: 1rem;
+  background-color: rgba(2, 48, 71, 1);
+  color: #fff;
+  font-weight: bold;
+  border: 0.5rem solid rgba(2, 48, 71, 1);
+  border-radius: 0.2rem;
+}
+
+#div_list_names {
+  display: flex;
+
+  margin: auto;
+}
+
+table {
+  margin-top: 1.5rem;
+  border-collapse: collapse;
+  border: 0.1rem solid black;
+}
+
+#nom {
+  width: 6rem;
+  height: 2rem;
+}
+#date {
+  width: 14rem;
+  height: 2rem;
+}
+
+#passer_tour {
+  width: 12rem;
+  height: 2rem;
+}
+tr {
+  width: 4rem;
+  border: 0.1rem solid rgb(37, 37, 37);
+  background-color: white;
+}
+
+td {
+  vertical-align: middle;
+  height: 2rem;
+  border: 0.1rem solid rgb(36, 36, 36);
+  text-align: center;
+  background-color: white;
+}
+th {
+  border: 0.1rem solid rgb(41, 41, 41);
+  text-align: center;
+  background: green;
+  padding: 0.5rem;
+}
+td {
+  border: 0.1rem solid black;
+  text-align: center;
+  background: white;
+  padding: 0.5rem;
+}
+
+.td_btn_passer {
+  background: black;
+  padding: 0.5rem;
+}
+.btn_passer {
+  background: orange;
+  border-radius: 0.3rem;
+  width: 10rem;
+  height: 2rem;
+}
+.td_nom_demandant_first {
+  background: rgb(162, 145, 255);
+}
+.td_date_demandant_first {
+  background: rgb(162, 145, 255);
+}
+.td_btn_passer_first {
+  background: rgb(162, 145, 255);
+}
+.td_nom_demandant_traite {
+  background: rgb(146, 248, 146);
+}
+.td_date_demandant_traite {
+  background: rgb(146, 248, 146);
+}
+.td_btn_passer_traite {
+  background: rgb(146, 248, 146);
+}
+.td_nom_demandant_passer {
+  background: rgb(153, 153, 153);
+}
+.td_date_demandant_passer {
+  background: rgb(153, 153, 153);
+}
+.td_btn_passer_passer {
+  background: rgb(153, 153, 153);
+}
+.hide_id_on_btn {
+  color: rgba(0, 0, 0, 0);
+}
+.link_all_btn {
+  text-decoration: none;
+}
+
+.btn_passer_base {
+  background-color: rgba(251, 133, 0, 1);
+  border: 0.1rem solid rgba(251, 133, 0, 1);
+  border-radius: 0.3rem;
+  color: #fff;
+  font-weight: bold;
+  width: 10rem;
+  height: 1.6rem;
+}
+
+@media screen and (max-width: 1400px) {
+  #maintitle {
+    font-size: 1.2rem;
+  }
+  #sec_title {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #sec_title_part2 {
+    margin-top: -1.6rem;
+  }
+
+  #input_name {
+    height: 2rem;
+  }
+
+  #btn_submit {
+    height: 2rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #btn_refraiche_list {
+    margin-top: 1rem;
+  }
+}

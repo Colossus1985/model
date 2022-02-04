@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/distri_pc.css" />
+    <script src="js/distri.js" defer></script>
+    <script src="https://kit.fontawesome.com/677c526923.js" crossorigin="anonymous"></script>
+    <title>ticket d'aide</title>
+  </head>
+  <body>
+    <header>
+      <div id="header_container">
+        <div id="div_title">
+          <h1 id="maintitle">Distributeur de tickets pour la promo</h1>
+        </div>
+        <div id="icon_header">
+          <img src="#" alt="ticket" />
+        </div>
+      </div>
+    </header>
+    <div id="main_container">
+      <div id="sec_title">
+        <div id="alien">
+          <img src="#" alt="alien head" />
+        </div>
+        <div id="sec_title_part1">
+          <h2 class="sec_title">Ici c'est comme à la poissonnerie</h2>
+        </div>
+        <div id="poisson">
+          <img src="#" alt="poisson" />
+        </div>
+        <div id="sec_title_part2">
+          <h2 class="sec_title">, il faut faire la queue !</h2>
+        </div>
+      </div>
+      <div id="div_ajout">
+        <form>
+          <label for="name" id="label_nom">Ton nom :</label>
+          <input type="text" name="name" id="input_name" maxlength="15" />
+          <div id="btn_submit" onClick="add_personne()">
+            <a href="#"
+              ><p id="help">Je veux de l'aide <img src="img/hands.png" alt="btn_img_demande" /></p
+            ></a>
+          </div>
+        </form>
+      </div>
+      <div id="div_list">
+        <div id="div_apprennant_title">
+          <h2 class="sec_title">Liste des apprenant.e.s</h2>
+        </div>
+        <div id="btn_suivant">
+          <div id="btn_suivant" onclick="suivant()">
+            <a href="">
+              <p>Au suivant <img src="#" id="btn_img_suivant" alt="suivant" /> !</p>
+            </a>
+          </div>
+          <button id="btn_refraiche_list" onclick="raffraichir()">
+            <a href="">
+              Raffraîchir la liste
+              <img src="#" id="btn_img_raffraichir" alt="raffraichir" />
+            </a>
+          </button>
+        </div>
+        <div id="div_list_names">
+          <table id="table_personnes">
+            <tr>
+              <th id="nom">Nom</th>
+              <th id="date">Date</th>
+              <th id="passer_tour">Passer mon tour</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br />
+  </body>
+</html>
