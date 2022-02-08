@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+  <body>
+    <script>
+      // console.log("toto tata".split());
+      // console.log("toto tata".split(""));
+      // console.log("toto, tata".split(", "));
+      // console.log("toto,tata,tutu".split(","));
+
+      //mySplit("toto tata", " ");
+      // console.log(mySplit("toto tata", " "));
+      // console.log(mySplit("toto tata tutu", " "));
+      //console.log(mySplit("toto,tata", ","));
+      // console.log(mySplit("toto,tata,tutu", ","));
+      // console.log(mySplit("toto, tata", ", "));
+      // console.log(mySplit("toto,,tata", ",,"));
+      // console.log(mySplit("totoLLetataLLetiti", "LLe"));
+
+      function isSeparator(str, separ, i) {
+        // console.log("str", str);
+        // console.log("separ", separ);
+        // str[i + 0] == separ[0]
+        // str[i + 1] == separ[1]
+        // ...
+        let res = true;
+        for (let j = 0; j < separ.length; ++j) {
+          // console.log("i", i);
+          // console.log("j", j);
+          // console.log("i+j", i + j);
+          // console.log("str[i+j]", str[i + j]);
+          // console.log("separ[j]", separ[j]);
+          if (str[i + j] != separ[j]) {
+            res = false;
+            break;
+          }
+        }
+        return res;
+      }
+
+      // console.log("isSeparator", isSeparator("toto,,tata", ",,", 2));
+      // console.log("isSeparator", isSeparator("toto,,tata", ",,", 4));
+
+      function mySplit(str, separ) {
+        // console.log("str", str);
+        // console.log("separ", separ);
+
+        let a = [];
+        var mot = "";
+        let i = 0;
+        while (i < str.length) {
+          if (isSeparator(str, separ, i)) {
+            a.push(mot);
+            mot = "";
+
+            // console.log("aCopy", aCopy);
+            i += separ.length;
+            continue;
+          }
+
+          mot = mot + str[i];
+
+          // console.log("[" + mot + "]");
+          i++;
+        }
+        a.push(mot);
+
+        return a;
+      }
+    </script>
+  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6da277547f624fab',m:'RcLXfW_Lo895mrStmRKGzcpf434NkSAR4g6nIPOuXuE-1644298228-0-AfyeH5MPCG30iv2lSVkPykQxNlnwkltVVlkn1eAOw1xPTNt927rZ3IeBpW8Lha8h9L4ESOjo5VFQ25U+vC7nuzcBqpW9E3AOOO4TswLmgLadqJitXURjYixG6+yihZaayumS1rE3Wyx8/TNfg/CHt0v9gBbYYIa+Y3sriebUFgDihMggUjadVcwqqCCDmWybYA==',s:[0x2e3d5d127c,0x8fd8a55627],}})();</script></body>
+</html>
