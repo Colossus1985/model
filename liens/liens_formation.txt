@@ -21,3 +21,6 @@ https://fr.wikipedia.org/wiki/Markdown
 
 innerHTML innerText textContent :
 https://betterprogramming.pub/whats-best-innertext-vs-innerhtml-vs-textcontent-903ebc43a3fc
+
+insert un élément dans n'imoporte quel indice dans la list :
+https://www.it-swarm-fr.com/fr/javascript/comment-inserer-un-element-dans-un-tableau-un-index-specifique-javascript/957814566/
